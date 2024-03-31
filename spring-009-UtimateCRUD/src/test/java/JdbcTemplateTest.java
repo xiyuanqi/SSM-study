@@ -1,0 +1,20 @@
+
+import com.pangding.configuration.configuration;
+import com.pangding.controller.StudentController;
+import junit.framework.TestCase;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class JdbcTemplateTest extends TestCase {
+    public void testQueryAll(){
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
+        StudentController studentController = applicationContext.getBean(StudentController.class);
+        studentController.findall();
+    }
+    public void testUtimateQuery(){
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(configuration.class);
+        StudentController studentController = applicationContext.getBean(StudentController.class);
+        studentController.findall();
+    }
+}

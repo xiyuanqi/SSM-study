@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDaoBean" class="com.pangding.spring6.dao.UserDao"></bean>
+
+    <bean id="userServiceBean" class="com.pangding.spring6.service.UserService">
+        <property name="userDao" ref="userDaoBean"></property>
+    </bean>
+
+<!--    <bean id="dogBean" class="com.pangding.spring6.dao.Dog">
+        <property name="name" value="小花"></property>
+        <property name="age" value="30"></property>
+        <property name="birth" ref="birthBean"></property>
+        <property name="people" ref="peopleBean"></property>
+    </bean>-->
+
+    <bean id="dogBean" class="com.pangding.spring6.dao.Dog">
+        <property name="people">
+            <bean class="com.pangding.spring6.dao.People">
+                <constructor-arg index="0" value="xiaosan"/>
+                <constructor-arg index="1" value="2"/>
+                <constructor-arg index="2" value="true"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="birthBean" class="java.util.Date"></bean>
+
+  <!--  <bean id="peopleBean" class="com.pangding.spring6.dao.People">
+       &lt;!&ndash; <constructor-arg index="0" value="zhangsan"></constructor-arg>
+        <constructor-arg index="1" value="10"></constructor-arg>
+        <constructor-arg index="2" value="true"></constructor-arg>&ndash;&gt;
+        <property name="name" value="zhangsan"></property>
+        <property name="age" value="2"></property>
+        <property name="sex" value="false"></property>
+    </bean>-->
+
+</beans>

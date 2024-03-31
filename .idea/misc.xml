@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring-001-first/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-002-DI/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-003-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-004-iocAnnotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-005-dynamic_proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-006-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/spiring-007-CRUD/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-008-CRUDbyAnnotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-009-UtimateCRUD/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-007-CRUD/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-010-transcation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-011-spring-mybatis/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-001-first/spring-007-CRUD/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-003-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-005-dynamic_proxy/spring-006-aop/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
